@@ -1,112 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Perimetro</title>
-        <link type= "text/css" rel= "stylesheet" href="styleper.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
-
-
-<body>
-
-   
-
-<div class="forma">
-    <form name="perimeter">
-   
-                <h1 class="boxTitle">Perimeter Calculator</h1 >
-
-                    
-                        
-                
-            <div class= "box"> 
-                
-                <p class="parraf">Thickness of material (hundredths of a millimeter: 5mm = 500 hundredths)</p>
-                <input type="number" placeholder= "00" class="in1" id="n1">
-            </div>
-                
-            <div class="box">
-                <P  class= "parraf"> External Diameter Roll (mm) </P >           
-                <input type="number" placeholder= "00" class= "in1" id="n2">    
-            </div>
-                
-            <div class="box">
-                <p  class= "parraf"> Internal Diameter initial diameter (mm) </p>           
-                <input type="number" placeholder= "00" class= "in1" id="n3">    
-            </div>     
-                
-                <input type="submit" value = CALCULATE class= "title2" onclick="peri();">              
-                <!--
-                    <input type= "reset" value = BORRA class= "title3" >              
-                
-                    <input type="textfield" name="ans" value = "perimin" autocomplete="off" readonly>                
-                <input type="textfield" name="ans" value = "" autocomplete="off" readonly>
-                -->
-
-                <div class="parraf2">
-                    <p>This tool has been made to calulate the longitud of a rolled material. This material is rolled over a core with a diameter. The information we have is:</p>
-                    <ul>
-                    
-                        <li>Thickness of the material Example: 500 hundredths of mm</li>
-                        <li>External Diameter of the roll, after some rounds over the same material. Example 300 mm</li>
-                        <li>internal Diameter over is rolled the material we want to know the longitude Example: 71 mm</li>
-                        
-                    
-                    </ul>
-                    <p>As a result the program shows an alert that shows the turns it makes around the initial diameter, and the final perimeter (Longitude). </p>
-                </div>
-                
-               </form>
-</div>
-
-<script type="text/javascript">
-
-function peri(){
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Protest+Strike&display=swap" rel="stylesheet">
     
-    var num1=(document.getElementById("n1").value);
-    var num2=(document.getElementById("n2").value);
-    var num3=(document.getElementById("n3").value);
 
 
-    var diamini = parseFloat(num3);
-    var perimin = 0;
-    var espesor = parseFloat((num1)/100);
-    var diamex = parseFloat(num2);
-    var vuelta = -1;
-    var diaminiCore = diamini;
+
+</head>
+<body>
+    <section class="bigbox">
+    
+    <h1 class="title1">PERIMETER CALCULATOR</h1>
+
+    <div    class="sqphoto">
+        <img class="photo"  src="ROLLO PERIM.jpg" alt="">
+
+    </div>
 
 
-        /*calculo   */
+    <div class="parr1">
+        <p>This tool has been made to calulate the longitud of a rolled material. This material is rolled over a core with a diameter. The information we have is:</p>
+        <ul>
+                    <li>Thickness of the material Example: 500 hundredths of mm</li>
+            <li>External Diameter of the roll, after some rounds over the same material. Example 300 mm</li>
+            <li>internal Diameter over is rolled the material we want to know the longitude Example: 71 mm</li>      
+        </ul>
+        <p>As a result the program shows an alert that shows the turns it makes around the initial diameter, and the final perimeter (Longitude). </p>
 
-    console.log('Diametro Inicial: '+ diamini);
-    console.log('Diametro Externo: ' +diamex);
+    </div>
 
-    while (diamini<diamex){
-   diamini = diamini + (espesor*2);
-   perimin = perimin + diamini*3.1416;
-   vuelta = vuelta + 1;
-   }
-   
-   console.log('Diametro Final: ' + diamini);
-   console.log('Perimetro: '+ perimin);
-   console.log('Vueltas : '+ vuelta);
+    <div class="table">
 
+        <table >
+            <tr  >
+                <td class="info">Thickness of material (hundredths of a millimeter: 5mm = 500 hundredths)</td>
+                <td ><input type="number" placeholder= "00" class="numb" id="n1"></td>
+            </tr>
+            <tr>
+                <td class="info">External Diameter Roll (mm)</td>
+                <td ><input type="number" placeholder= "00" class="numb" id="n2"> </td>
+            </tr>
+    
+            <tr  >
+                <td class="info">Internal Diameter initial diameter (mm)</td>
+                <td ><input type="number" placeholder= "00" class="numb" id="n3"> </td>
+                       
+            </tr>
 
-    var operacion= parseInt(num1) + parseInt(num2) + parseInt(num3);
+    
 
-   // var perimetro= (n1);
+    </div>
+    
+        <input class="calcul" type="submit" value = CALCULATE class= "title2" onclick="peri();">  
+        <p class="parr2"> 2024 by RAOS All writes reserved &copy;</p>
 
+    </section>
 
-    alert("Material thickness: " +espesor+  " mm \n Perimeter: " + (perimin/1000) + " meters \n Final Diamater: " + diamini + " mm \n The roll has:  " + vuelta + " turns." );
-     document.getElementById("perimin").innerHTML = perimin   
+    <script type="text/javascript">
 
-}
-
-
-</script>
+        function peri(){
+            
+            var num1=(document.getElementById("n1").value);
+            var num2=(document.getElementById("n2").value);
+            var num3=(document.getElementById("n3").value);
+        
+        
+            var diamini = parseFloat(num3);
+            var perimin = 0;
+            var espesor = parseFloat((num1)/100);
+            var diamex = parseFloat(num2);
+            var vuelta = -1;
+            var diaminiCore = diamini;
+        
+        
+                /*calculo   */
+        
+            console.log('Diametro Inicial: '+ diamini);
+            console.log('Diametro Externo: ' +diamex);
+        
+            while (diamini<diamex){
+           diamini = diamini + (espesor*2);
+           perimin = perimin + diamini*3.1416;
+           vuelta = vuelta + 1;
+           }
+           
+           console.log('Diametro Final: ' + diamini);
+           console.log('Perimetro: '+ perimin);
+           console.log('Vueltas : '+ vuelta);
+        
+        
+            var operacion= parseInt(num1) + parseInt(num2) + parseInt(num3);
+        
+           // var perimetro= (n1);
+        
+        
+            alert("Material thickness: " +espesor+  " mm \n Perimeter: " + (perimin/1000) + " meters \n Final Diamater: " + diamini + " mm \n The roll has:  " + vuelta + " turns." );
+             document.getElementById("perimin").innerHTML = perimin   
+        
+        }
+        
+        
+        </script>
+        
 
 </body>
 </html>
-
-<br>
