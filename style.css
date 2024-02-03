@@ -1,0 +1,268 @@
+
+
+* { box-sizing:border-box;
+}
+
+.title1 {
+
+    font-size: 40px;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-optical-sizing: auto;
+    text-align:center;
+}
+
+
+.table {
+
+    width: 80%;
+    height:150px;
+    background-color: white;
+
+}
+
+.info {
+    width: 80%;
+    height: 50px;
+
+    font-family: "Pathway Gothic One", sans-serif;
+    text-align: right;
+
+}
+
+.numb {
+width: 100%;
+height: 50px;
+border: solid;
+font-family: "Pathway Gothic One", sans-serif;
+font-size: 30px;
+float: right;
+text-align: center;
+background-color: rgb(104, 104, 104);
+color: white;
+}
+
+.calcul {
+
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    border-radius: 10% 10%
+
+}
+
+
+
+
+
+/* Big Size*/
+@media (min-width: 1070px ) {
+
+    .bigbox {
+
+        width: 60%;
+        height: auto;
+        margin-left: 20%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .sqphoto {
+        
+        width: 100%;
+        height: 70px;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .photo {
+        height:240%;
+        margin-left: 10%;
+     }
+
+    .parr1 {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 130px;
+        overflow:hidden scroll;
+        margin-top: 15%;
+        font-family: "Pathway Gothic One", sans-serif;
+        font-weight: 10;
+        
+    }
+
+    .parr2 {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        width: 60%;
+        height: 100px;
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 0%;
+        font-family: "Pathway Gothic One", sans-serif;
+        font-weight: 10;
+        
+    }
+    .calcul {
+
+        width: 12%;
+        height: 159px;
+        background-color: rgb(235, 198, 33);
+        margin-top: 3px;
+        margin-left: 47%;
+        position: absolute;
+        font-size: 30px;
+    }
+
+.info {
+    font-size: 18px;
+}
+
+}
+
+
+
+/* Medium Size*/
+@media (max-width: 1069px ) and (min-width: 899px) {
+
+
+        .bigbox {
+    
+            width: 50%;
+        
+            margin-left: 20%;
+            background-color: rgb(255, 255, 255);
+        }
+    
+        .sqphoto {
+            
+            width: 100%;
+            height: 70px;
+            background-color: rgb(255, 255, 255);
+    
+        }
+    
+        .photo {
+            height:200%;
+            margin-left: 20%;
+         }
+    
+        .parr1 {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 130px;
+            overflow:hidden scroll;
+            margin-top: 15%;
+            font-family: "Pathway Gothic One", sans-serif;
+            font-weight: 10;
+            
+        }
+    
+        .parr2 {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            width: 60%;
+            height: 100px;
+            position: absolute;
+            margin-top: 180px;
+            margin-left: 0%;
+            font-family: "Pathway Gothic One", sans-serif;
+            font-weight: 10;
+            
+        }
+        .calcul {
+    
+            width: 10%;
+            height: 159px;
+            background-color: rgb(235, 198, 33);
+            margin-top: 3px;
+            margin-left:39%;
+            position: absolute;
+            font-size: 20px;
+        }
+    
+    .info {
+        font-size: 18px;
+    }
+    
+    }
+    
+
+/* Small Size*/
+@media (max-width: 898px )  {
+
+    .bigbox {
+    
+        width: 90%;
+    
+        margin-left: 15%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .sqphoto {
+        
+        width: 100%;
+        height: 70px;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .photo {
+        height:150%;
+        margin-left: 2%;
+     }
+
+    .parr1 {
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        height: 130px;
+        overflow:hidden scroll;
+        margin-top: 15%;
+        font-family: "Pathway Gothic One", sans-serif;
+        font-weight: 10;
+        
+    }
+
+    .parr2 {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        width: 60%;
+        height: 100px;
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 0%;
+        font-family: "Pathway Gothic One", sans-serif;
+        font-weight: 10;
+        
+    }
+    .calcul {
+
+        width: 10%;
+        height: 159px;
+        background-color: rgb(235, 198, 33);
+        margin-top: 3px;
+        margin-left:60%;
+        position: absolute;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .info {
+        width: 60%;
+        height: 50px;
+    
+        font-family: "Pathway Gothic One", sans-serif;
+        text-align: right;
+    }
+    .numb {
+    width: 60%;
+    height: 50px;
+    border: solid;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 30px;
+    float: right;
+    text-align: center;
+    background-color: rgb(104, 104, 104);
+    color: white;
+    margin-right: 38% ;
+
+    }
+
+
+}
